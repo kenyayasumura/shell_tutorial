@@ -16,7 +16,7 @@
 ※ .bash_profile または .profile 内でPATHを通しておくとどこからでもコマンドが打てて楽です。
 
 
-e.g.)
+e.g.)  
 BASEPATH=your base path  
 PATH="${BASEPATH}/your/directory:${PATH}"  
 export PATH  
