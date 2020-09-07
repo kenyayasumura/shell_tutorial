@@ -18,12 +18,12 @@ do
         fi
         read -r insertedTextText
         echo "$insertedTextText" >> $fileName
-    else
-        echo 'ando takaki sakamoto yasumura ANDO TAKAKI SAKAMOTO YASUMURA' >> outputs/grep1.txt
-        echo 'yasumura tarou satou gotou mitani nakamura hasegawa okuno' >> outputs/grep2.txt
-        echo 'tanaka yamada yamamoto yoshida shimozawa nakagawa takaki' >> outputs/grep3.txt
-        echo '012-3456-7890 234-567-890 456-789-012' >> outputs/phone.txt
     fi
+
+    echo 'ando takaki sakamoto yasumura ANDO TAKAKI SAKAMOTO YASUMURA' >> outputs/grep1.txt
+    echo 'yasumura tarou satou gotou mitani nakamura hasegawa okuno' >> outputs/grep2.txt
+    echo 'tanaka yamada yamamoto yoshida shimozawa nakagawa takaki' >> outputs/grep3.txt
+    echo '012-3456-7890 234-567-890 456-789-012' >> outputs/phone.txt
 done
 
 #ヒットしたものすべて表示
