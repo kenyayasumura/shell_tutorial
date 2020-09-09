@@ -78,3 +78,8 @@ history | grep 'ls' | grep 'a'
 #grep '...-...-...' outputs/phone.txt
 #環境によっては -P コマンドが不要(Mac)
 grep -wirlP '\d{3}-\d{3}-\d{3}' .
+
+#特定の文字を除いた文を検索する(-v)
+#不要な行を-vで削除していくことで、絞り込みもできる。
+grep 'satou' outputs/grep2.txt | grep -v 'okuno'
+cat /etc/services | grep http | grep -v http- | grep -v https | grep -v ^#
