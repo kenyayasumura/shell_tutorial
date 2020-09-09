@@ -33,8 +33,19 @@ cat outputs/sed1.txt
 
 # 何行目から何行目という指定方法
 # ｓの前に　開始行,修了行　と記入する
+# ちなみに１文字だけ入れれば特定の行のみ、$を入力すれば最終行となる。
 
 echo {a..e} | xargs -n 1 | sed '2,4s/./???/'
 
+# 正規表現を使った場合
+
+echo {a..e} | xargs -n 1 | sed '/b/,/d/s/./???/'
+
 # その他の指定方法参考：
 # https://www.atmarkit.co.jp/ait/articles/1610/17/news015.html
+
+# 行を指定して抽出する
+# pについて：sed -n '指定範囲p' で指定した範囲をprintする
+
+echo {a..e} | xargs -n 1 | sed -n '4p'
+echo {a..e} | xargs -n 1 | sed -n '2,4p'
