@@ -20,6 +20,16 @@ du -h --max-depth=1
 
 ps
 
-# ダミーファイル作成 
+# ダミーファイル作成
 # <<で標準入力からデータを挿入、以下の場合finと入力すると完了し、dummydataというファイルが作られる
 # cat << fin > dummydata
+
+echo "<()"
+diff <(cd outputs;cat diff1.txt) <(cd outputs;cat diff2.txt)
+
+# <()>とは：
+# プロセス置換といい、bashの機能。本来ファイルが入る場所ですが、代わりにコマンドを入れたいときに使う。
+
+echo "NF FR"
+# NFはフィールド数
+# NRは行数

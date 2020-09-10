@@ -49,3 +49,8 @@ echo {a..e} | xargs -n 1 | sed '/b/,/d/s/./???/'
 
 echo {a..e} | xargs -n 1 | sed -n '4p'
 echo {a..e} | xargs -n 1 | sed -n '2,4p'
+
+# バックアップを作成する(-i.拡張子)
+# echo 卵 | tee egg1 egg2 egg3
+# sed -i.txt 's/卵/玉子/g' egg{1,2,3}
+# cat egg{1,2,3}

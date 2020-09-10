@@ -10,3 +10,6 @@ fi
 
 # 半角スペースを改行に置き換え、.;を削除し（-d）、大文字を小文字に置き換える。
 cat outputs/tr1.txt | tr ' ' '\n' | tr -d '.;' | tr 'A-Z' 'a-z' | sort
+
+# 出力する値を反転（-c）
+cat outputs/tr1.txt | tr -dc 'what'
