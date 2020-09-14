@@ -14,3 +14,6 @@ if [ ! -e outputs/join2.txt ]; then
 fi
 
 join -a 1 -a 2 outputs/join1.txt outputs/join2.txt
+
+# ２個目のふぁいるオール、足りない分＿に垣江
+join -a 2 -e _ path path
