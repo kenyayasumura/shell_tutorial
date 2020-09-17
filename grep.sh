@@ -85,3 +85,6 @@ grep -wirlP '\d{3}-\d{3}-\d{3}' .
 #不要な行を-vで削除していくことで、絞り込みもできる。
 grep 'satou' outputs/grep2.txt | grep -v 'okuno'
 cat /etc/services | grep http | grep -v http- | grep -v https | grep -v ^#
+
+# 正規表現を使う(-E)
+grep -E '[a-z]' outputs/grep2.txt
