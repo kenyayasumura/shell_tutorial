@@ -33,6 +33,8 @@ grep 'yasumura' outputs/grep1.txt
 #完全一致(-w)だけ表示
 grep -w 'yasumura' outputs/grep1.txt
 
+#一致した箇所だけを表示
+grep -o 'yasumura' outputs/grep1.txt
 
 #完全一致でかつ、大文字小文字を区別せず(-i)表示
 grep -wi 'YaSuMuRa' outputs/grep1.txt
